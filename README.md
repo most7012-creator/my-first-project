@@ -35,7 +35,7 @@
 - `Dockerfile` 작성
 - 이미지 이름: `my-first-web`
 - 컨테이너 이름: `my-web`
-- 브라우저 주소: http://localhost:8080
+- 브라우저 주소: http://localhost:8082
 - Bind Mount 테스트 주소: http://localhost:8081
 
 ### 5. 문제 해결 기록
@@ -82,7 +82,7 @@
 - [x] Docker 버전 확인: 29.9.2
 - [x] hello-world 실행
 - [x] Dockerfile 작성 및 이미지 빌드
-- [x] 웹사이트 실행: http://localhost:8080
+- [x] 웹사이트 실행: http://localhost:8082
 - [x] Bind Mount 실습: http://localhost:8081
 - [x] Docker Volume 데이터 저장 및 확인
 
