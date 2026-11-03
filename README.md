@@ -89,3 +89,28 @@
 ### 문제 해결 기록
 - Windows PowerShell과 Ubuntu의 명령어 및 경로 차이를 학습함
 - Docker Desktop의 WSL Integration 설정을 확인함
+
+### Linux 명령어 실제 실행 결과
+
+#### 파일 및 폴더 관리
+```text
+$ touch evidence-check/first.txt
+$ ls -l evidence-check
+total 0
+-rw-r--r-- 1 user user 0 first.txt
+
+$ cp evidence-check/first.txt evidence-check/copy.txt
+$ mv evidence-check/copy.txt evidence-check/renamed.txt
+$ rm evidence-check/renamed.txt
+
+$ echo "Linux 명령어 실습 증거입니다." > evidence-check/first.txt
+$ cat evidence-check/first.txt
+Linux 명령어 실습 증거입니다.
+
+$ touch evidence-check/.hidden.txt
+$ ls -la evidence-check
+.hidden.txt
+first.txt
+
+
+```
