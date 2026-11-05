@@ -114,3 +114,30 @@ first.txt
 
 
 ```
+
+### 파일 권한 변경 실제 결과
+
+```text
+$ chmod 600 permission-test.txt
+$ ls -l permission-test.txt
+-rw------- 1 user user 0 permission-test.txt
+```
+
+
+### 디렉터리 권한 변경 실제 결과
+
+```text
+$ chmod 700 permission-dir
+$ ls -ld permission-dir
+drwx------ 2 user user 4096 permission-dir
+```
+
+
+### Linux 파일 권한 숫자의 의미
+
+- r은 읽기(4), w는 쓰기(2), x는 실행(1)을 의미한다.
+- 600은 소유자만 읽기와 쓰기가 가능하고, 그룹과 다른 사용자는 접근할 수 없다.
+- 644는 소유자는 읽기와 쓰기가 가능하며, 그룹과 다른 사용자는 읽기만 가능하다.
+- 700은 소유자에게 읽기, 쓰기, 실행 권한을 주고 다른 사용자의 접근을 제한한다.
+- 755는 소유자는 모든 권한을 갖고, 그룹과 다른 사용자는 읽기와 실행이 가능하다.
+
